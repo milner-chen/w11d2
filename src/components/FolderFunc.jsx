@@ -28,7 +28,7 @@ const Headers = ({ titles, currentTab, selectTab }) => {
   );
 }
 
-function Folder({ folders }) {
+function FolderFunc({ folders }) {
 
   const [currentTab, setCurrentTab] = useState(0);
   
@@ -56,4 +56,4 @@ function Folder({ folders }) {
     );
 }
 
-export default Folder;
+export default FolderFunc;

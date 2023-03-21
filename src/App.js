@@ -1,5 +1,6 @@
 import Clock, { ClockToggle } from './components/Clock';
-import Folder from './components/Folder';
+// import Folder from './components/Folder';
+import FolderFunc from './components/FolderFunc';
 import Weather from './components/Weather';
 import Autocomplete from './components/Autocomplete';
 import { useState } from 'react';
@@ -29,7 +30,7 @@ function App() {
 
     return (
       <div className="widgets">
-        <Folder folders={folders} />
+        <FolderFunc folders={folders} />
         <Weather />
         <ClockToggle toggleClock={toggleClock} />
         {showClock && <Clock />}
