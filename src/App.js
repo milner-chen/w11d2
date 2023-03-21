@@ -1,4 +1,5 @@
-import Clock, { ClockToggle } from './components/Clock';
+// import Clock, { ClockToggle } from './components/Clock';
+import ClockFunc, { ClockToggle } from './components/ClockFunc';
 // import Folder from './components/Folder';
 import FolderFunc from './components/FolderFunc';
 // import Weather from './components/Weather';
@@ -34,7 +35,7 @@ function App() {
         <FolderFunc folders={folders} />
         <WeatherFunc />
         <ClockToggle toggleClock={toggleClock} />
-        {showClock && <Clock />}
+        {showClock && <ClockFunc />}
         <Autocomplete names={names} />
       </div>
     );
