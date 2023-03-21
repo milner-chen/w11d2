@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Headers = ({ titles, currentTab, selectTab }) => {
   const handleClick = (e) => {

@@ -4,7 +4,8 @@ import ClockFunc, { ClockToggle } from './components/ClockFunc';
 import FolderFunc from './components/FolderFunc';
 // import Weather from './components/Weather';
 import WeatherFunc from './components/WeatherFunc';
-import Autocomplete from './components/Autocomplete';
+// import Autocomplete from './components/Autocomplete';
+import AutocompleteFunc from './components/AutocompleteFunc';
 import { useState } from 'react';
 
 const names = [
@@ -36,7 +37,7 @@ function App() {
         <WeatherFunc />
         <ClockToggle toggleClock={toggleClock} />
         {showClock && <ClockFunc />}
-        <Autocomplete names={names} />
+        <AutocompleteFunc names={names} />
       </div>
     );
   }
